@@ -2,15 +2,14 @@
 # Пример:
 # 6782 -> 23
 # 0,56 -> 11
-a = input('Введите число ')
-s = 0
-for i in str(a):
-   # if str(a) < 0:
-   #     s += float(i)
-  #  else:
-    s += int(i)
-print(s)
 
+float_num = input('Введите число:  ')
+
+sum = 0
+for i in float_num:
+    if i != '.':
+        sum += int(i)
+print(sum)
 
 
       
