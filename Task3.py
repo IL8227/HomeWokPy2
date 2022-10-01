@@ -10,11 +10,10 @@ lst = []
 s = 0
 for i in range(1,n + 1):
     lst += [(1 + 1/i)**i]
-    for a in lst:
-        s += float(a)
-           
-print(lst)
-print(s)    
+print(lst)    
+for a in list(lst):
+        s += a          
+print(round(s,3))    
         
               
 
